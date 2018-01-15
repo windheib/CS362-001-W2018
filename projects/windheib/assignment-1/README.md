@@ -1,1 +1,1 @@
-This is my Assignment 1 folder
+This is my Assignment 1 submission
