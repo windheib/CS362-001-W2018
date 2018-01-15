@@ -35,10 +35,7 @@ public class TimeTable {
 	     
 
 	        
-	        //Make sure that the first day is before the last day
-	        if (!firstDay.before(lastDay)) {
-	        	throw new DateOutOfRangeException ("Second date specified is not  before the first date specified.");
-	        }
+
 	        
 	        
 	        //Create the first CalDay object with the starting date and add to list
@@ -52,7 +49,6 @@ public class TimeTable {
 	        //Retrieve the appts - <appt> 
 		for (int i = 0; i < appts.size(); i++) {
 			Appt appt=appts.get(i);
-			if(!appt.getValid()) continue;
 			// Figure out which days the appointment occurs on
 			LinkedList<GregorianCalendar> apptOccursOnDays = getApptOccurences(
 					appt, firstDay, lastDay);
