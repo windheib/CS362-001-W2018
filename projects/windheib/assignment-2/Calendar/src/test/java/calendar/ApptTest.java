@@ -53,16 +53,16 @@ public class ApptTest {
 		 String description="This is my birthday party.";
 		 Appt appt = new Appt(startHour, startMinute, startDay, startMonth, startYear, title, description);
 		 //assertions
-		 appt.setStartHour(15);
-		 assertEquals(15, appt.getStartHour());
-		 appt.setStartMinute(10);
-		 assertEquals(10, appt.getStartMinute());
-		 appt.setStartDay(10);
-		 assertEquals(10, appt.getStartDay());
-		 appt.setStartMonth(10);
-		 assertEquals(10, appt.getStartMonth());
-		 appt.setStartYear(2007);
-		 assertEquals(2007, appt.getStartYear());
+		 appt.setStartHour(8);
+		 assertEquals(8, appt.getStartHour());
+		 appt.setStartMinute(80);
+		 assertEquals(80, appt.getStartMinute());
+		 appt.setStartDay(4);
+		 assertEquals(4, appt.getStartDay());
+		 appt.setStartMonth(11);
+		 assertEquals(11, appt.getStartMonth());
+		 appt.setStartYear(1998);
+		 assertEquals(1998, appt.getStartYear());
 
 		 appt.setDescription("description");
 		 assertEquals("description", appt.getDescription());
