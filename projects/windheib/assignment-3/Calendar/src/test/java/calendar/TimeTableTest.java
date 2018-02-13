@@ -183,11 +183,7 @@ public class TimeTableTest {
 			
 			calDays = table.getApptRange(listAppts, today, tomorrow);
 			
-			// test list
-			// test invalid date returns null
-			assertEquals(null, table.deleteAppt(listAppts, appt));
-			
-			//testing assert equals null errors work correctly
+			assertEquals(null, table.deleteAppt(listAppts, appt));			
 			assertEquals(null, table.deleteAppt(null, null));
 			assertEquals(null, table.deleteAppt(listAppts, null));
 			assertEquals(null, table.deleteAppt(null, listAppts.get(1)));
