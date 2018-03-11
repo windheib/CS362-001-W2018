@@ -1,0 +1,21 @@
+Bug 1
+	Project: Calender
+	Version: Assignment 5
+	Component: Appt.java
+	Priority: Major
+	Title: isValid incomparable conditional
+	Description: In isValid() in Appt.java on line 121, there is a conditional statement 
+		if(startDay<1 && startDay>NumDaysInMonth)
+	An integer cannot be both above and below a positive number, so this condition will never be satisfied. This bug  causes the program to miss the case where an incorrect value for startDay causes the appointment to be labeled invalid. The program functions normally unless an appointment is created with an incorrect day value which will not be picked up, and will eventually create an Appt object with garbage data. Insted, the valid flag should be set to false when start day falls outside of the expected range. This should be a simple fix. 
+
+Bug 2
+	Project: Calender
+	Version: Assignment 5
+	Component: TimeTable.java
+	Priority: Critical
+	Title: deleteAppt error throw
+	Description: On line 200 in deleteAppt() in TimeTable.java, the AND operator causes the program to behave incorrectly, as it will attempt to delete an appointment if either appts or appt is null. The bug reqiures both values to be null for deleteAppt to return null. As a result, the program crashes with a NullPointerException. This is unacceptable, as it completely limits any sort of testing to be done and the program cannot even run with some types of data. The expected behavior is that it will delete an appointment if one is null, which is specified in the original source code. 
+
+
+
+
